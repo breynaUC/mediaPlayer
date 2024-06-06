@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btncontinuarreproducir"
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:hint="Buscar x Des"
+        android:onClick="continuar"
+        app:icon="@drawable/ic_baseline_repeat"
+        app:layout_constraintEnd_toStartOf="@+id/btndetener"
+        app:layout_constraintStart_toEndOf="@+id/btnpause"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <Button
+        android:id="@+id/btnplay"
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="5dp"
+        android:hint="Guardar"
+        android:onClick="iniciar"
+        app:icon="@drawable/ic_baseline_play"
+        app:layout_constraintEnd_toStartOf="@+id/btnpause"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteY="44dp" />
+
+
+    <Button
+        android:id="@+id/btnpause"
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:hint="Buscar x Cod"
+        android:onClick="pausa"
+        app:icon="@drawable/ic_baseline_pause"
+        app:layout_constraintEnd_toStartOf="@+id/btncontinuarreproducir"
+        app:layout_constraintStart_toEndOf="@+id/btnplay"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <Button
+        android:id="@+id/btndetener"
+        android:layout_width="59dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:hint="Eliminar"
+        android:onClick="circular"
+        app:icon="@drawable/ic_baseline_stopcircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btncontinuarreproducir"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
+        tools:layout_editor_absoluteY="44dp" />
+
+    <Button
+        android:id="@+id/btnnoreproducir"
+        android:layout_width="202dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="20dp"
+        android:text="no reproducir en forma circular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnpause"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
